@@ -36,7 +36,7 @@ router.post(
     failureFlash: true,
   }),
   async (req, res) => {
-    res.flash("welcome to Wanderlust! You are logged in!");
+    req.flash("success","welcome to Wanderlust! You are logged in!");
     res.redirect("/listings");
   }
 );
